@@ -12,36 +12,52 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
 
-  <div class="cotainer navbar ">
-    <div class="row">
-      <nav class="col">
-        <h3 class=logo>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <!-- <a class="nav-link active" aria-current="page" href="#"> -->
+            <h3>
             <img src="resources/images/ic-logo.svg" class="bizlogo">
-            COLMAR<span>ACADEMY</span></h3>
-          <ul>
-            <li>On campus</li>
-            <li>Online</li>
-            <li>For Companies</li>
-            <li>Sign in</li>
-          </ul>
-        <nav>
-    </div>
-  </div>
+             COLMAR<span>ACADEMY</span></h3>
+
+            <!-- </a> -->
+              <ul class="navbar-nav">
+                <li class="nav-item"> <a class="nav-link" href="#">On campus</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">Online</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">For Companies</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">Sign in</a></li>
+              </ul>
+            </div>
+
+              <div class="navbar-icons">
+                <a class="active" href="#"><img src="resources/images/ic-logo.svg" class="icons"></a>
+                <a href="#"><img src="resources/images/ic-on-campus.svg" class="icons"></a>
+                <a href="#"><img src="resources/images/ic-online.svg" class="icons"></a>
+                <a href="#"><img src="resources/images/ic-login.svg" class="icons"></a>
+              </div>
+          </div>
+        </nav>
+    <div>
 
   <div class="container">
     <div class="row header">
-        <div class="col">
+        <div class="col-md-4">
             <figure>
-                <img src="resources/images/banner.jpg" alt="">
-        </div class=>
+                <img src="resources/images/banner.jpg" alt="" class="img-fluid">
+            </figure>
+        </div>
 
         <div class="col">
+          <div class="learnSomething">
             <h1>Learn something new everyday</h1>
             <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             <input type="button" name=StartHere value="Start Here" class="button">
+          </div>
         </div>
 
     </div>
@@ -49,9 +65,10 @@
 
     <div class="container ">
       <div class="row practiceSection">
-        <div class="col">
+        <div class="col-md-8">
             <figure>
-                <img src="resources/images/information-main.jpg" alt="">
+                <img src="resources/images/information-main.jpg" alt="" class="img-fluid">
+            </figure>
             <h1>It doesn't hurt to keep practicing.</h1>
             <p>
                 "Curabitur vitae libero in ipusm porttitor consequat. Aliquam et commodo lectus,
@@ -61,45 +78,49 @@
             <h4> Emanuel, Sr Strategist at Hiring.com</h4>
         </div>
 
-      <div class="col">
-        <div class="card centerCard">
-            <div class="row g-0">
-              <div class="col-md-4 imagebox">
+      <div class="col-md-4 centerCard">
+        <div class="card">
+            <div class="row">
+              <div class="col">
                 <img src="resources/images/information-orientation.jpg" class="img-fluid " alt="...">
               </div>
-              <div class="col-md-8">
+              <div class="col">
                 <div class="card-body">
                   <h5 class="card-title">Orientation date</h5>
-                  <p class="card-text">Tue 10/11 & Wed 10/12: 8am -3pm</p>
+                  <p class="card-text">Tue 10/11 & Wed 10/12: 8am -3pm  </p>
+                    <a href="">Read More</a>
+
                 </div>
               </div>
             </div>
           </div>
 
-            <div class="card centerCard">
-                <div class="row g-0">
-                  <div class="col-md-4 imagebox">
+            <div class="card">
+                <div class="row">
+                  <div class="col">
                     <img src="resources/images/information-campus.jpg" class="img-fluid " alt="...">
                   </div>
-                  <div class="col-md-8">
+                  <div class="col">
                     <div class="card-body">
                       <h5 class="card-title">Our Campus</h5>
-                      <p class="card-text">Find which campus is close by you</p>
+                      <p class="card-text">Find which campus is close by you.  </p>
+                      <a href="">Read More</a>
                     </div>
                   </div>
                 </div>
               </div>
 
-            <div class="card centerCard">
-                <div class="row g-0">
-                    <div class="col-md-4 imagebox">
+            <div class="card">
+                <div class="row">
+                    <div class="col">
                     <img src="resources/images/information-guest-lecture.jpg" class="img-fluid " alt="...">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col">
                       <div class="card-body">
                           <h5 class="card-title">Our guest lecture</h5>
                           <p class="card-text">Join a keynote with Oilver Sack about music in medical treatment</p>
-                      </div>
+                        <a href="">Read More</a>
+                        </div>
                    </div>
                 </div>
             </div>
@@ -117,7 +138,7 @@
             <img src="resources/images/course-software.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Software engineering</h5>
-            <h6 class="card-text">Courses</h6>
+            <h6 class="card-text">COURSES</h6>
             <p class="card-text">Web development, Mobile Development, iOT, APIs</p>
           </div>
           </div>
@@ -127,7 +148,7 @@
             <img src="resources/images/course-computer-art.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Computer Art</h5>
-            <h6 class="card-text">Courses</h6>
+            <h6 class="card-text">COURSES</h6>
             <p class="card-text">
               Imaging & Design, Web Design, motion Graphics & Visual Effects,
             Computer Animation</p>
@@ -138,7 +159,7 @@
             <img src="resources/images/course-design.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Design</h5>
-              <h6 class="card-text">Course</h6>
+              <h6 class="card-text">COURSES</h6>
               <p class="card-text">User Experience Design, User Research, Visual Design</p>
             </div>
           </div>
@@ -147,7 +168,7 @@
             <img src="resources/images/course-data.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Data</h5>
-              <h6 class="card-text">Courses</h6>
+              <h6 class="card-text">COURSES</h6>
               <p class="card-text"> Data Sciences, Big Data, SQL, Data Visualization</p>
             </div>
           </div>
@@ -157,7 +178,7 @@
             <img src="resources/images/course-business.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Business</h5>
-              <h6 class="card-text">Courses</h6>
+              <h6 class="card-text">COURSES</h6>
               <p class="card-text">Product Development, Business Development, Startup</p>
             </div>
           </div>
@@ -166,69 +187,93 @@
             <img src="resources/images/course-marketing.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Marketing</h5>
-              <h6 class="card-text">Courses</h6>
+              <h6 class="card-text">COURSES</h6>
               <p class="card-text">Analytics, Content Marketing, Mobile Marketing</p>
             </div>
           </div>
-
       </div>
     </div>
   </di>
+
+<div class="row">
+  <div class="col list-group">
+    <h2>Start Learning</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Software engineering</li>
+      <li class="list-group-item">Computer Art</li>
+      <li class="list-group-item">Design</li>
+      <li class="list-group-item">Data</li>
+      <li class="list-group-item">Business</li>
+      <li class="list-group-item">Marketing</li>
+    </ul>
+  </div>
+</div>
 </div>
 
 <div class="container">
-  <div class="row">
+  <div class="row thesis">
     <h2>Thesis exhibit</h2>
-  <div class="col">
-    <video controls style="width:600px;">
-    <source src="resources/videos/thesis.mp4">
-    </video>
-    <h4> Reimagine urban</h4>
-    <p>
-      "Curabitur vitae libero in ipusm porttitor consequat. Aliquam et commodo lectus,
-      nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex.
-       Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"
-    </p>
-  </div>
 
-
-
-<div class="col">
-  <div class="card centerCard" >
-      <div class="row g-0">
-        <div class="col-md-4 imagebox">
-          <img src="resources/images/thesis-fisma.jpg" class="img-fluid " alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Orientation date</h5>
-            <p class="card-text">Tue 10/11 & Wed 10/12: 8am -3pm</p>
-          </div>
-        </div>
-      </div>
+    <div class="col">
+      <div class="embed-responsive embed-responsive-1by1">
+        <video controls>
+        <source src="resources/videos/thesis.mp4">
+        </video>
+    </div>
+      <h4> Reimagine urban</h4>
+      <p>
+        "Curabitur vitae libero in ipusm porttitor consequat. Aliquam et commodo lectus,
+        nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex.
+        Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"
+      </p>
     </div>
 
-      <div class="card centerCard">
-          <div class="row g-0">
-            <div class="col-md-4 imagebox">
-              <img src="resources/images/thesis-now-and-then.jpg" class="img-fluid " alt="...">
+
+
+  <div class="col-md-4">
+    <div class="card centerCard" >
+        <div class="row g-0">
+          <div class="col imagebox">
+            <img src="resources/images/thesis-fisma.jpg" class="img-fluid " alt="...">
+          </div>
+
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title">Fisma: Design and Prototype</h5>
+              <p class="card-text">Designer showcase of new prototype product</p>
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Our Campus</h5>
-                <p class="card-text">Find which campus is close by you</p>
+          </div>
+
+        </div>
+      </div>
+
+        <div class="card centerCard">
+            <div class="row g-0">
+              <div class="col imagebox">
+                <img src="resources/images/thesis-now-and-then.jpg" class="img-fluid " alt="...">
+              </div>
+              <div class="col">
+                <div class="card-body">
+                  <h5 class="card-title">Now and then</h5>
+                  <p class="card-text">Research study about New York</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-<hr>
-<footer>
-  <p> &copy; Colmar Academy. All rights reserved. </p>
-  <ul>
-    <li>Terms</li>
-    <li>Privacy</li>
-  </ul>
+    <hr>
+
+  <footer class="footer">
+    <p> &copy; Colmar Academy. All rights reserved. </p>
+    <div class="footerlist">
+      <ul>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+    </div>
+  </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

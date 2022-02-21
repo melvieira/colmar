@@ -1,15 +1,26 @@
-nav {
-  display: inline-flex;
-  position: relative;
+body {
+  font-family: "Raleway";
 }
 h2 {
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  font-size: 38px;
+  font-weight: 800;
+  color: rgb(75, 73, 73);
 }
 h3 {
   font-size: 32px;
-  font-weight: normal;
+  font-weight: 500;
+}
+h4 {
+  font-size: 15px;
+}
+h6 {
+  color: gray;
+}
+p {
+  color: gray;
 }
 span {
   font-size: 32px;
@@ -21,14 +32,35 @@ ul {
   position: relative;
   list-style-type: none;
   text-align: end;
-  margin: 0px;
 }
 li {
   padding: 8px;
 }
 img {
   padding: 15px;
-  width: 600px;
+  width: 800px;
+}
+
+figure {
+  overflow: hidden;
+}
+
+footer p {
+  display: inline-flex;
+  position: relative;
+}
+
+.footerlist {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header {
+  background-color: rgb(219, 218, 218);
+  padding: 32px 0px;
+}
+.navbar {
+  padding: 0px;
 }
 
 .bizlogo {
@@ -36,27 +68,35 @@ img {
   position: relative;
   height: 70px;
   width: max-content;
+  padding: 0px;
+}
+.card {
+  border: none;
+}
+.icons {
+  display: inline-flex;
+  position: relative;
+  height: 40px;
+  width: auto;
+  padding: 0px;
 }
 
-.practiceSection {
-  background-color: red;
-  justify-content: center;
+.learnSomething {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: left;
 }
-
 .centerCard {
-  background-color: greenyellow;
-  justify-content: center;
+  padding: 0px;
 }
-.imagebox {
+.practiceSection {
   justify-content: center;
+  padding: 32px 0px;
 }
 
-.header {
-  background-color: rgb(219, 218, 218);
-}
-.navbar {
-  background-color: yellow;
-}
 .button {
   padding: 8px 100px;
   background-color: rgb(80, 79, 79);
@@ -67,9 +107,48 @@ img {
   display: inline-flex;
   margin: 16px;
   width: 300px;
-  background-color: yellow;
+}
+
+.list-group-item {
+  text-align: left;
+  padding: 20px;
+  color: rgb(93, 92, 92);
+  background-color: rgb(219, 218, 218);
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .startLearning {
   background-color: rgb(219, 218, 218);
+  text-align: center;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  h3,
+  .navbar-nav,
+  .col-md-8,
+  .startLearning,
+  .thesis .centerCard,
+  .thesis p,
+  h4,
+  .footerlist {
+    display: none;
+  }
+}
+
+.navbar-icons a {
+  display: inline-flex;
+  position: relative;
+  margin-left: 40px;
+  padding: 5px 0px;
+}
+@media only screen and (min-width: 766px) {
+  .navbar-icons,
+  .list-group {
+    display: none;
+  }
 }
